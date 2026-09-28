@@ -1,0 +1,30 @@
+# Target & Build files
+target/
+backend/target/
+frontend/dist/
+frontend/node_modules/
+node_modules/
+
+# Environment files & Secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+frontend/.env
+*.pem
+*.key
+
+# Internal project documentation (keep local, exclude from public repo)
+ARCHITECTURE_DESIGN.md
+DATABASE_DESIGN.md
+DEPLOYMENT_NOTES.md
+REQUIREMENTS_LOCK.md
+REQUIREMENT_TRACEABILITY.md
+
+# IDE & OS temporary files
+.idea/
+.vscode/
+*.swp
+*.DS_Store
+Thumbs.db

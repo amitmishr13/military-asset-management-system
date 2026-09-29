@@ -227,30 +227,7 @@ CREATE DATABASE military_asset_db;
 
 ---
 
-## 11. Automated Testing
-
-The backend contains **45 automated integration and unit test cases** built with Spring Boot Test, Spring Security Test, and H2 in-memory database:
-
-- **Authentication Tests:** `AuthenticationIntegrationTest` (Valid/invalid login, token validation, expired token handling)
-- **Authorization Tests:** `RbacAuthorizationTest`, `BaseAuthorizationTest` (Role permissions, cross-base access restrictions)
-- **Inventory & Dashboard Tests:** `DashboardIntegrationTest`, `MathematicalDashboardStockTest`, `HistoricalAssignmentDashboardTest`
-- **Operational Module Tests:** `PurchaseIntegrationTest`, `TransferIntegrationTest`, `AssignmentIntegrationTest`, `ExpenditureIntegrationTest`, `AssignmentExpenditureInteractionTest`
-
-Execute tests via Maven:
-```bash
-cd backend
-mvn test
-```
-
----
-
-## 12. Screenshots
-
-*Application screenshots will be added after final UI verification.*
-
----
-
-## 13. Future Improvements
+## 11. Future Improvements
 
 - **Server-Side Pagination:** Implement Spring Data `Pageable` on transaction logs for large-scale datasets.
 - **Voucher PDF Generation:** Add automated PDF receipt exports for inter-base transfers and personnel assignments.
